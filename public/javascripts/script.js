@@ -9,5 +9,7 @@ function validatePassword(){
   }
 }
 
+var username = "Stranger";
+
 password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
