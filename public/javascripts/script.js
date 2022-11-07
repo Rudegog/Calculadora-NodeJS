@@ -1,15 +1,21 @@
-var password = document.getElementById("password")
-  , confirm_password = document.getElementById("confirm_password");
+document.getElementById("myInput").oninvalid = function() {myFunction()};
 
-function validatePassword(){
-  if(password.value != confirm_password.value) {
-    confirm_password.setCustomValidity("Passwords Don't Match");
-  } else {
-    confirm_password.setCustomValidity('');
-  }
+function myFunction() {
+  alert("Você precisa completar as perguntinhas.");
 }
 
-var username = "Stranger";
+document.querySelector("myInput").addEventListener("input", function(){
+   
+ const go = document.querySelector("email");
+  
+  go.disabled = this.value.length >= 3 ? false : true;
+  
+});
 
-password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;
+function IsEmail(email){
+  var exclude=/[^@-.w]|^[_@.-]|[._-]{2}|[@.]{2}|(@)[^@]*1/;
+  var check=/@[w-]+./;
+  var checkend=/.[a-zA-Z]{2,3}$/;
+  if(((email.search(exclude) != -1)||(email.search(check)) == -1)||(email.search(checkend) == -1)){return false;}
+  else {return true;}
+}
