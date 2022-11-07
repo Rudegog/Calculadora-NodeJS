@@ -5,26 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/background.css">
     <link rel="icon" href="images/calculadora-icon.png">
     <title>Calculadora WEB</title>
 </head>
 
 <body>
-
-    <div class="wrapper">
-        <div>
-            <h1>Vamos às contas!</h1>
-        </div>
-        <div class="setuser">
-            <p>Insira o seu nome abaixo para prosseguir:</p>
-            <div class="wrapper">
-                <input class="username" type="text" maxlength=20 min="3" /><label>Endereço
-                    completo</label><button>Confirm</button>
+    <div class="principal">
+        <div class="formulario">
+            <div class="text-principal">
+                <div class="frs-text">
+                    <p>Vamos fazer umas contas?</p>
+                </div>
+                <div class="sec-text">
+                    <p>Meu nome é Calculino, e o seu?</p>
+                </div>
+                <div class="trd-text">
+                    <p>Me diga o seu nome, sobrenome e seu e-mail para nos conhecermos melhor.</p>
+                </div>
+                <div id="form">
+                    <form method="get">
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="myInput" pattern=".{2,}" required><br>
+                        <label for="lastname">Sobrenome:</label>
+                        <input type="text" name="name" id="myInput" pattern=".{2,}" required><br>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="name" id="myInput" pattern=".{6,}" required><br>
+                        <input type="submit" value="Vamos lá!" id="submit" disabled><a href=""></a>
+                    </form>
+                </div>
             </div>
         </div>
-
 </body>
-<script src="/public/javascripts/script.js"></script>
+<script src="javascripts/script.js"></script>
 
 </html>
