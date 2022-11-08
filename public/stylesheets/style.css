@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 
+
 .principal {
 	display: grid;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 .formulario{
@@ -55,10 +58,16 @@
 #myInput{
 	display: flex;
 	align-items: center;
+	border-radius: 2%;
+	border:azure;
 }
 
 #submit{
 	display: flex;
-	align-items: center;
+	border-radius: 8%;
+	background-color: none; 
+	margin-left: 20%;
+	font-weight: bold;
+	height: fit-content;
+	box-sizing: border-box;
 }
-
