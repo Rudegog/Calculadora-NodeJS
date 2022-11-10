@@ -1,7 +1,5 @@
 module.exports = function(server) {
-
-    
-    //route Soma
+ 
         server.route({
             method: 'GET',
             path: '/calculadora/soma/{num1}/{num2}',
@@ -18,7 +16,6 @@ module.exports = function(server) {
             }
         });
     
-    //route Subtração
         server.route({
             method: 'GET',
             path: '/calculadora/sub/{num1}/{num2}',
@@ -34,7 +31,6 @@ module.exports = function(server) {
                 return data;
             }
         });
-    //route Multiplicação
         server.route({
             method: 'GET',
             path: '/calculadora/multi/{num1}/{num2}',
@@ -50,8 +46,6 @@ module.exports = function(server) {
                 return data;
             }
         });
-    
-    //route Divisão
         server.route({
             method: 'GET',
             path: '/calculadora/div/{num1}/{num2}',
