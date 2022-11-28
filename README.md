@@ -26,8 +26,7 @@ Além disto é bom ter um editor para trabalhar com o código como <a href="http
 ```  
 ### Antes de iniciar o servidor, vamos instalar a dependências do projeto:
 ```bash
-  npm install nodemon
-  npm install @hapi/hapi
+  npm install
 ```  
 ### Agora sim! Vamos rodar o projeto! Digite o comando abaixo e digite no navegador o endereço <link>http://localhost:3000</link> :
 ```bash
